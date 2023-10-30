@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: exemple-lock-pessimista
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/ferrari488?useTimezone=true&serverTimezone=UTC&createDatabaseIfNotExist=true
+    username: root
+    password: S@m16162
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+
+
+
+
+
+server:
+  port: 8000
